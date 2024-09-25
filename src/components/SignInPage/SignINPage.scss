@@ -1,0 +1,45 @@
+/* SignInPage.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .sign-in-container {
+    background: linear-gradient(to right, #c8a3ef, #39455a); 
+
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .sign-in-card {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Card shadow */
+    background: rgba(255, 255, 255, 0.9); 
+  }
+  
+  .sign-in-card .text-center {
+    color: #333; /* Dark text for card content */
+  }
+  
+  .sign-in-button {
+    background-color: #2575fc; /* Button color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .sign-in-button:hover {
+    background-color: #6a11cb; /* Change color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .link-effect {
+    color: #2575fc; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .link-effect:hover {
+    color: #6a11cb; /* Change link color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
