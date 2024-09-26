@@ -10,7 +10,7 @@ function SignInPage() {
         <Col xs={12} md={6} lg={4} className="mx-auto">
           <Card className="sign-in-card">
             <Card.Body>
-              <Card.Title className="text-center">Sign In</Card.Title>
+              <Card.Title className="text-center mb-3">Sign In</Card.Title>
               <Form>
                 <Form.Group controlId="formEmail">
                   <Form.Label>Email address</Form.Label>
