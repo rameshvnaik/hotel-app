@@ -12,23 +12,20 @@ import Cart from './components/Cart/Cart';
 function App() {
   return (
     <div className="App">
-
-
-
-
       <Router>
-      <NavBar />
+        <NavBar />
 
         <Routes>
-
-          <Route path="/signIN" element={<SignInPage />} />
-          <Route path="/home" element={<Container>
+          <Route path="/" element={<Container>
             <MenuBar />
             <Displayitem />
+          </Container>} />
+          <Route path="/menu" element={<Container>
+            <MenuBar />
+            <Displayitem />
+          </Container>} />
+          <Route path="/signIN" element={<SignInPage />} />
 
-
-
-          </Container> } />
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </Router>
