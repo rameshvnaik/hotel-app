@@ -39,7 +39,8 @@ const MenuBar = () => {
     return (
         <div >
             <div className='menubar-header'>
-                <div>        <h3>What you want to TRY?</h3>
+                <div>        
+                    <h3>What you want to TRY?</h3>
                 </div>
                 <div className='button-section'>
                     <button className="button" onClick={scrollLeft}>
@@ -52,9 +53,6 @@ const MenuBar = () => {
 
             </div>
             <div expand="lg" className="category-bar-container">
-
-
-
                 <div className="category-bar-wrapper">
                     <div className="category-bar" ref={scrollRef}>
                         {categories.map((category, index) => (
