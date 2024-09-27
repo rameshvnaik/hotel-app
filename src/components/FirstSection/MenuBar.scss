@@ -18,6 +18,11 @@
         cursor: pointer;
         border-radius: 50%;
         margin-right: 10px;
+
+        @media screen and (max-width: 767px) {
+          padding: 2px 8px;
+
+        }
       }
       
       .button:last-child {
@@ -28,6 +33,11 @@
         background-color: #555;
       }
       
+
+      @media screen and (max-width:756px){
+        margin-top: 17vh;
+        margin-bottom: 10px;
+      }
 }
 
 
@@ -100,4 +110,12 @@
   .scroll-button:hover {
     background-color: #555;
   }
+}
+
+@media screen and (max-width: 767px) {
+
+h3{
+  font-size: 14px;
+}
+  
 }
