@@ -37,7 +37,7 @@ const MenuBar = () => {
     ];
 
     return (
-        <div >
+        <div  className='menubar-section'>
             <div className='menubar-header'>
                 <div>        
                     <h3>What you want to TRY?</h3>

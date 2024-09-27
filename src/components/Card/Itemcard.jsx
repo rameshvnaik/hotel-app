@@ -14,11 +14,13 @@ function Itemcard({ item }) {
       payload: item,
     })
   }
+
   return (
     <div className="item-card">
       <Card style={{ textAlign: 'center', height: '100%' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '180px' }}>
           <Card.Img
+          className='card-image'
             variant="top"
             src={item.image}
             alt={item.title}
@@ -26,8 +28,8 @@ function Itemcard({ item }) {
           />
         </div>
         <Card.Body>
-          <Card.Title>{item.name}</Card.Title>
-          <Card.Text>
+          <Card.Title className='card-title'>{item.name}</Card.Title>
+          <Card.Text className='card-text'>
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </Card.Text>
           <button

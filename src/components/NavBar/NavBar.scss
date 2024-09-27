@@ -1,6 +1,7 @@
 .cart-icon {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
+  }
   
   .cart-badge {
     position: absolute;
@@ -12,10 +13,7 @@
     padding: 2px 6px;
     font-size: 12px;
   }
-
   @media screen and (max-width: 767px) {
-
-
     .cart-badge {
       position: absolute;
       top: -5px; 
@@ -23,5 +21,8 @@
       padding: 1px 4px; 
       font-size: 10px;
     }
+
+     .nav-link{
+      text-decoration: none !important;
+    }
   }
-}
