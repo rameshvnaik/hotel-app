@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 15vh;
+    margin-bottom: 10px;
 
     .button-section {
       display: flex;
@@ -120,7 +121,7 @@
 
   @media screen and (max-width: 767px) {
 
-    h3 {
+    h5 {
       font-size: 14px;
     }
 

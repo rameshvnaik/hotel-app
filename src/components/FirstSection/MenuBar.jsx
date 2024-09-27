@@ -40,7 +40,7 @@ const MenuBar = () => {
         <div  className='menubar-section'>
             <div className='menubar-header'>
                 <div>        
-                    <h3>What you want to TRY?</h3>
+                    <h5>What you want to TRY?</h5>
                 </div>
                 <div className='button-section'>
                     <button className="button" onClick={scrollLeft}>
