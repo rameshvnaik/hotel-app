@@ -2,6 +2,8 @@ import React , {useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUtensils, faTags, faSignInAlt, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
+
 import { useSelector } from 'react-redux';
 import './NavBar.scss'
 import { useNavigate,Link } from 'react-router-dom';
@@ -44,6 +46,10 @@ function NavBar() {
               {cartItemCount > 0 && (
                 <span className="cart-badge">{cartItemCount}</span>
               )}
+            </Link>
+
+            <Link className="nav-link"  to="/chefPanel" onClick={handleNavClick}>
+              <FontAwesomeIcon icon={faUtensils} /> Chef Panel
             </Link>
 
           </Nav>
