@@ -1,7 +1,7 @@
 import React , {useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUtensils, faTags, faSignInAlt, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUtensils, faTags, faSignInAlt, faShoppingCart, faChartBar } from '@fortawesome/free-solid-svg-icons';
 
 
 import { useSelector } from 'react-redux';
@@ -32,16 +32,22 @@ function NavBar() {
             <Link className="nav-link" to="/" onClick={handleNavClick}>
               <FontAwesomeIcon icon={faHome} /> Home
             </Link>
-            <Link className="nav-link"  to="/menu" onClick={handleNavClick} >
+            {/* <Link className="nav-link"  to="/menu" onClick={handleNavClick} >
               <FontAwesomeIcon icon={faUtensils} /> Menu
             </Link>
             <Link className="nav-link"  to="#offers" onClick={handleNavClick}>
               <FontAwesomeIcon icon={faTags} /> Offers
+            </Link> */}
+            <Link className="nav-link"  to="/signIN" onClick={handleNavClick}>
+              <FontAwesomeIcon icon={faUtensils} /> Add Menu
+            </Link>
+                <Link className="nav-link"  to="/salesData" onClick={handleNavClick}>
+              <FontAwesomeIcon icon={faChartBar} /> SalesChart
             </Link>
             <Link className="nav-link"  to="/signIN" onClick={handleNavClick}>
               <FontAwesomeIcon icon={faSignInAlt} /> Sign In
             </Link>
-            <Link  to="/cart" className="nav-link cart-icon" onClick={handleNavClick}>
+            {/* <Link  to="/cart" className="nav-link cart-icon" onClick={handleNavClick}>
               <FontAwesomeIcon icon={faShoppingCart} /> Cart
               {cartItemCount > 0 && (
                 <span className="cart-badge">{cartItemCount}</span>
@@ -50,8 +56,15 @@ function NavBar() {
 
             <Link className="nav-link"  to="/chefPanel" onClick={handleNavClick}>
               <FontAwesomeIcon icon={faUtensils} /> Chef Panel
-            </Link>
+            </Link> */}
+        
 
+            {/* <Link className="nav-link"  to="/adminPanel" onClick={handleNavClick}>
+              <FontAwesomeIcon icon={faUtensils} /> Admin Panel
+            </Link> */}
+
+
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -24,12 +24,14 @@ const  counterReducer=(state=INITIAL_VALUE, action)=>{
             }
         }
     }
-    else if(action.type==="REMOVEFROMCART")  {
+    else if(action.type==="REMOVEFROMMENU")  {
+      console.log("remove item", action.payload.id);
         return {
-          ...state,
-          cartItem: state.cartItem.filter(item => item.id !== action.payload.id),
+          
+        
+          cartItem:state.cartItem.filter((item)=>item.id !==action.payload.id)
         };
-      }
+    }
     else if(action.type==="INCREASE_QUANTITY")  {
         const updatedCartItems = state.cartItem.map(item =>
           item.id === action.payload.id ? { ...item, quantity: item.quantity?item.quantity:1 + 1 } : item

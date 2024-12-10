@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import React from 'react'
-import Itemcard from './Itemcard'
-import './Displayitem.scss'
+import AdminPanel from './AdminPanel';
 
-const Displayitem = () => {
+const AdminControl = () => {
     const [items, setItems] = useState([]);
 
 
@@ -27,11 +26,11 @@ const Displayitem = () => {
    
         <div className="item-container">
         {items && items.map((item) => (
-          <Itemcard key={item.id} item={item} />
+          <AdminPanel key={item.id} item={item} />
           
         ))}
       </div>
     )
 }
 
-export default Displayitem
+export default AdminControl

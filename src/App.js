@@ -9,6 +9,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cart from './components/Cart/Cart';
 import MenuBasedOnTime from './components/Card/MenuBasedOnTime';
 import Chef from './components/Chef/ChefPanel';
+import AdminControl from './components/AdminPanel/AdminControl.jsx';
+import SalesChart from './components/DisplayData/SalesChart.jsx'
+
 
 function App() {
   return (
@@ -28,6 +31,12 @@ function App() {
           </Container>} />
           <Route path="/signIN" element={<SignInPage />} />
           <Route path="/chefPanel" element={<Chef />} />
+          <Route path="/adminPanel" element={<AdminControl />} />
+          <Route path="/salesData" element={<SalesChart />} />
+
+
+
+
 
 
           <Route path="/cart" element={<Cart />} />
